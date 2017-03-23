@@ -38,6 +38,5 @@ newEntry desc id =
     }
 
 
-init : Maybe Model -> ( Model, Cmd Msg )
-init savedModel =
-    Maybe.withDefault emptyModel savedModel ! []
+init : ( Model, Cmd Msg )
+init = emptyModel ! []
