@@ -59,9 +59,6 @@ update msg model =
             { model | entries = List.filter (\t -> t.id /= id) model.entries }
                 ! []
 
-        DeleteComplete ->
-            { model | entries = List.filter (not << .completed) model.entries }
-                ! []
 
         Check id isCompleted ->
             let

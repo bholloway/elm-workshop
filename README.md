@@ -1,18 +1,28 @@
 # TodoMVC in Elm - [Try It!](http://evancz.github.io/elm-todomvc)
 
-All of the Elm code lives in `Todo.elm` and relies on the [elm-lang/html][html] library. 
+From [Elm todomvc](https://github.com/evancz/elm-todomvc), just a small handsone
 
-[html]: http://package.elm-lang.org/packages/elm-lang/html/latest 
+## Requirements
 
-There also is a port handler set up in `index.html` to store the Elm application's state in `localStorage` on every update.
+ * [NodeJS](https://nodejs.org/en/download/)
+ * Elm: `npm install -g elm`
+ * Elm test: `npm install -g elm-test`
 
+## Commands
 
-## Build Instructions
+### Test
 
-Run the following command from the root of this project:
-
-```bash
-elm-make Todo.elm --output elm.js
+```sh
+elm-test
 ```
 
-Then open `index.html` in your browser!
+
+### Run the application
+
+```sh
+chokidar 'src/**/*.elm' -c 'elm-make Todo.elm --output elm.js' # rebuild the app for each change
+open index.html
+```
+
+
+## Steps
