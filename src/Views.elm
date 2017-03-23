@@ -113,7 +113,6 @@ viewEntry todo =
                 [ class "toggle"
                 , type_ "checkbox"
                 , checked todo.completed
-                , onClick (Check todo.id (not todo.completed))
                 ]
                 []
             , label

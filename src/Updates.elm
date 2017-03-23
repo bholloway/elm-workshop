@@ -54,19 +54,3 @@ update msg model =
             in
                 { model | entries = List.map updateEntry model.entries }
                     ! []
-
-        Delete id ->
-            { model | entries = List.filter (\t -> t.id /= id) model.entries }
-                ! []
-
-
-        Check id isCompleted ->
-            let
-                updateEntry t =
-                    if t.id == id then
-                        { t | completed = isCompleted }
-                    else
-                        t
-            in
-                { model | entries = List.map updateEntry model.entries }
-                    ! []

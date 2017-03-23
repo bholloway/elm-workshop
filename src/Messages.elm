@@ -7,4 +7,3 @@ type Msg
     | UpdateEntry Int String
     | Add
     | Delete Int
-    | Check Int Bool

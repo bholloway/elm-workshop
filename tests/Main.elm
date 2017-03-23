@@ -15,7 +15,7 @@ tests =
         [ Sample.Generated.tests
         , Sample.String.tests
         , Todo.Update.Delete.tests
-        , Todo.Update.Check.tests
+        --, Todo.Update.Check.tests
         ]
 
 
