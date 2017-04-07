@@ -33,6 +33,12 @@ elm-make --output elm.js # build the app
 elm-test #run the tests
 ```
 
+## IDE plugins
+
+* For Atom https://atom.io/packages/language-elm 
+* For Sublime https://atom.io/packages/language-elm (not tested)
+* For IDEA https://plugins.jetbrains.com/plugin/8192-elm-language-plugin
+
 ## Steps
 
 ### Delete a Todo
