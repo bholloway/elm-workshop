@@ -1,6 +1,6 @@
-# TodoMVC in Elm - [Try It!](http://evancz.github.io/elm-todomvc)
+# Hands-on for Elm
 
-From [Elm todomvc](https://github.com/evancz/elm-todomvc), just a small handsone
+Introduction hands-on workshop for Elm
 
 ## Requirements
 
@@ -14,6 +14,7 @@ From [Elm todomvc](https://github.com/evancz/elm-todomvc), just a small handsone
 ### Test
 
 ```sh
+chokidar 'src/**/*.elm' -c 'elm-test' # re-run the test for each change
 elm-test
 ```
 
