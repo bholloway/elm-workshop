@@ -21,7 +21,7 @@ elm-test
 ### Run the application
 
 ```sh
-chokidar 'src/**/*.elm' -c 'elm-make Todo.elm --output elm.js' # rebuild the app for each change
+chokidar 'src/**/*.elm' -c 'elm-make src/Todo.elm --output elm.js' # rebuild the app for each change
 open index.html
 ```
 
@@ -29,13 +29,13 @@ open index.html
 
 ```sh
 elm-package install # install dependencies
-elm-make --output elm.js # build the app
+elm-make src/Todo.elm --output elm.js # build the app
 elm-test #run the tests
 ```
 
 ## IDE plugins
 
-* For Atom https://atom.io/packages/language-elm 
+* For Atom https://atom.io/packages/language-elm
 * For Sublime https://atom.io/packages/language-elm (not tested)
 * For IDEA https://plugins.jetbrains.com/plugin/8192-elm-language-plugin
 
@@ -48,7 +48,7 @@ The application is not compiling find out why and fix the problem. To make sure 
 
 ### Check a Todo
 
-Your application should be up and running but you can't check or uncheck todos. Uncomment in `tests/Main.elm` the line `Todo.Update.Check.tests` You should have some failing test. Fix it and don't forget to create the view.
+Your application should be up and running but you can't check or uncheck todos. Uncomment in `tests/Main.elm` the line `Todo.Update.Check.tests` You should have some failing test. Fix it and don't forget to update the view.
 
 ### Add the number of task in the view
 Add in the view, the number of tasks created
